@@ -1,35 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {MacchineCardType} from './components/MacchineCard';
+import styles from './App.module.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+import './global.css';
+import {CardDisplay, CardDisplayProps} from './components/CardDisplay';
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+export interface TitleProps {
+  bold?: boolean;
+  content: string;
 }
 
-export default App
+const cardDisplay: CardDisplayProps = {
+  description:
+    'Esses equipamentos são a escolha ideal para quem busca qualidade e durabilidade.',
+  title: [
+    {content: 'Confira algumas das ', bold: false},
+    {content: 'máquinas em destaque ', bold: true},
+    {content: 'para malharia', bold: false},
+  ],
+  macchineCards: [
+    {
+      id: 1,
+      imageSrc: `src/assets/mesa-de-passadoria.jpg`,
+      macchineName: 'Mesa Vaporizadora',
+      description: 'Utilizada na vaporização de diversos tipos de tecidos',
+      buttonText: 'Veja mais',
+    },
+
+    {
+      id: 2,
+      imageSrc: `src/assets/mesa-de-passadoria.jpg`,
+      macchineName: 'Mesa Vaporizadora',
+      description:
+        'Utilizada na vaporização de diversos tipos de tecidos Utilizada na vaporização de diversos tipos de tecidos Utilizada na vaporização de diversos tipos de tecidos',
+      buttonText: 'Veja mais',
+    },
+  ],
+};
+
+function App() {
+  return (
+    <div className={styles.wrapper}>
+      <CardDisplay cardDisplay={cardDisplay} />
+    </div>
+  );
+}
+
+export default App;
