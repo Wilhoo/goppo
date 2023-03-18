@@ -1,0 +1,45 @@
+.containerHeader {
+  display: flex;
+  justify-content: space-around;
+  height: 4rem;
+}
+
+.containerHeader {
+  height: 3.7rem;
+}
+
+.itensHeader {
+  height: 100%;
+  display: flex;
+}
+
+.itensHeader button {
+  border: none;
+  background: transparent;
+  padding: 0 14px;
+  font-size: 0.9rem;
+}
+
+.itensHeader button:hover {
+  color: var(--blue-500);
+}
+
+.headerSuperior {
+  display: flex;
+  justify-content: end;
+}
+
+.headerSuperior button {
+  border: none;
+  background: transparent;
+  padding: 5px 15px;
+  font-size: 0.8rem;
+}
+
+.headerSuperior button:hover {
+  color: var(--blue-500);
+}
+
+.headerSuperior button:focus, .headerSuperior button:active {
+  outline: none;
+}

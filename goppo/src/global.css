@@ -62,3 +62,7 @@ h4,
 h5 {
   font-family: 'Montserrat', sans-serif;
 }
+
+button {
+  cursor: pointer;
+}
