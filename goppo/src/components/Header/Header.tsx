@@ -23,7 +23,7 @@ export function Header({headerItens}: HeaderItensType) {
           })}
       </div>
       <div className={styles.containerHeader}>
-        <img src= {headerItens?.imageSrc}/>
+        <img className={styles.logoStyle} src= {headerItens?.imageSrc}/>
         <div className={styles.itensHeader}>
           {headerItens?.headerItens.map((item: HeaderItensType) => {
             return <button>{item.headerItemName}</button>

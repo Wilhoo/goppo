@@ -1,0 +1,27 @@
+.containerFooter {
+  background-color: var(--blue-400);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3vh 0;
+}
+
+.logoStyle {
+  margin-top: 6vh;
+  height: 40%;
+}
+
+.textItensFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1vh 0;
+}
+
+.textItensFooter span {
+  color: #fff;
+}
+
+.textItensTitle {
+  font-weight: 600;
+}

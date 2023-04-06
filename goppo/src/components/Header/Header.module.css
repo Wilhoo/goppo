@@ -6,6 +6,7 @@
 
 .containerHeader {
   height: 3.7rem;
+  background-color: var(--blue-400);
 }
 
 .itensHeader {
@@ -17,23 +18,26 @@
   border: none;
   background: transparent;
   padding: 0 14px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  color: #fff;
 }
 
 .itensHeader button:hover {
-  color: var(--blue-500);
+  color: var(--gray-200);
 }
 
 .headerSuperior {
   display: flex;
   justify-content: end;
+  width: 90%;
+  padding: 2vh 5vh 2vh 0vh;
 }
 
 .headerSuperior button {
   border: none;
   background: transparent;
   padding: 5px 15px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .headerSuperior button:hover {
@@ -42,4 +46,9 @@
 
 .headerSuperior button:focus, .headerSuperior button:active {
   outline: none;
+}
+
+.logoStyle {
+  margin-top: 1vh;
+  height: 80%;
 }

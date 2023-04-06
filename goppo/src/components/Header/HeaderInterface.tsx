@@ -1,7 +1,7 @@
 import {HeaderProps, HeaderItensType, Header} from '../Header/Header';
 
 export const headerItens: HeaderItensType = {
-  imageSrc: 'src/assets/logo-blue.jpg',
+  imageSrc: 'src/assets/logo.png',
   headerItens: [
     {
       id: 1,
