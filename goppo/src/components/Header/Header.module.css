@@ -20,7 +20,18 @@
   padding: 0 14px;
   font-size: 0.95rem;
   color: #fff;
+  outline: none;
 }
+
+.itensHeader button:focus {
+  outline: none;
+  border: 0;
+}
+
+*:focus {
+  outline: none !important;
+}
+
 
 .itensHeader button:hover {
   color: var(--gray-200);
@@ -30,7 +41,7 @@
   display: flex;
   justify-content: end;
   width: 90%;
-  padding: 2vh 5vh 2vh 0vh;
+  padding: 1vh 2vh 1vh 0vh;
 }
 
 .headerSuperior button {
@@ -40,15 +51,69 @@
   font-size: 0.9rem;
 }
 
+.headerSuperior button:focus, .itensHeader button:focus {
+  outline: none;
+  box-shadow: none;
+  border-radius: none;
+}
+
 .headerSuperior button:hover {
   color: var(--blue-500);
 }
 
-.headerSuperior button:focus, .headerSuperior button:active {
-  outline: none;
+.itensHeader:focus {
+  outline: transparent;
+  box-shadow: none;
+  border-radius: none;
 }
 
 .logoStyle {
-  margin-top: 1vh;
-  height: 80%;
+  margin-top: 1.5vh;
+  height: 65%;
+}
+
+@media(max-width: 1000px){
+  .logoStyle {
+    margin-top: 1vh;
+    height: 80%;
+    width: 80%;
+  }
+}
+
+.headerContainerMobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--blue-400);
+}
+
+.headerLogoMobile {
+  background-color: var(--blue-400);
+  padding: 2vh 0 2vh 1.5vh;
+}
+
+.dropdownStyle {
+  margin-right: 10px;
+}
+
+.dropdownIcon {
+  background-color: transparent !important;
+  border: transparent !important;
+}
+
+.dropdownIcon::after {
+  display: none !important;
+}
+
+.dropdownIcon svg {
+  width: 25px;
+  height: 25px;
+}
+
+.dropdownItensContainer {
+  background: var(--blue-400) !important;
+}
+
+.itemDropdown {
+  color: #fff !important;
 }
