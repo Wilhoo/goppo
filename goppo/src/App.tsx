@@ -1,12 +1,12 @@
-import {MacchineCardType} from './components/MacchineCard';
+import { MacchineCardType } from './components/MacchineCard';
 import styles from './App.module.css';
 
 import './global.css';
-import {CardDisplay, CardDisplayProps} from './components/CardDisplay';
-import {Header} from './components/Header/Header';
-import {headerItens} from './components/Header/HeaderInterface';
-import {Footer} from './components/Footer/Footer';
-import {footerItens} from './components/Footer/FooterInterface';
+import { CardDisplay, CardDisplayProps } from './components/CardDisplay';
+import { Header } from './components/Header/Header';
+import { headerItens } from './components/Header/HeaderInterface';
+import { Footer } from './components/Footer/Footer';
+import { footerItens } from './components/Footer/FooterInterface';
 
 export interface TitleProps {
   bold?: boolean;
@@ -19,9 +19,9 @@ const cardDisplay: CardDisplayProps = {
   description:
     'Esses equipamentos são a escolha ideal para quem busca qualidade e durabilidade.',
   title: [
-    {content: 'Confira algumas das ', bold: false},
-    {content: 'máquinas em destaque ', bold: true},
-    {content: 'para malharia', bold: false},
+    { content: 'Confira algumas das ', bold: false },
+    { content: 'máquinas em destaque ', bold: true },
+    { content: 'para malharia', bold: false },
   ],
   macchineCards: [
     {
@@ -49,9 +49,9 @@ const cardDisplay2: CardDisplayProps = {
   description:
     'Esses equipamentos são a escolha ideal para quem busca qualidade e durabilidade.',
   title: [
-    {content: 'Confira algumas das ', bold: false},
-    {content: 'máquinas em destaque ', bold: true},
-    {content: 'para malharia', bold: false},
+    { content: 'Confira algumas das ', bold: false },
+    { content: 'máquinas em destaque ', bold: true },
+    { content: 'para malharia', bold: false },
   ],
   macchineCards: [
     {

@@ -1,35 +1,39 @@
 import styles from './Footer.module.css';
 
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faPhone} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+
+export interface FooterType {
+  footerItens: FooterItensType;
+}
 
 export interface FooterItensType {
   id: number;
-  footerItemName: string;
   description: string;
-  footerItens?: FooterProps;
   imageSrc?: string;
+  footerItensX?: FooterProps;
+  footerItemName: string;
+  faImage?: object;
 }
 
 export interface FooterProps {
-  footerItens: FooterItensType[];
   footerSuperior: FooterItensType[];
-  imageSrc: string;
+  imageSrc?: string;
 }
 
-export function Footer({footerItens}: FooterItensType) {
+export function Footer({ footerItens }: FooterType) {
   return (
     <div>
       <div className={styles.containerFooter}>
         <div className={styles.containerLogoFooter}>
           <img
             className={styles.logoStyle}
-            src={footerItens?.imageSrc}
+            src={footerItens.imageSrc}
           />
         </div>
 
         <div className={styles.textItensFooter}>
-          {footerItens?.footerSuperior.map((item: FooterItensType) => {
+          {footerItens.footerItensX?.footerSuperior.map((item: FooterItensType) => {
             return (
               <div className={styles.textItensFooter}>
                 <span className={styles.textItensTitle}>
@@ -37,7 +41,7 @@ export function Footer({footerItens}: FooterItensType) {
                 </span>
                 <span>
                   {item.description}{' '}
-                  {item.imageSrc && (
+                  {item.faImage && (
                     <FontAwesomeIcon
                       className="hamburguer-dropdown"
                       icon={faPhone}
