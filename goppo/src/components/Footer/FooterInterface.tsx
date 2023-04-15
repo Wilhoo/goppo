@@ -3,7 +3,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export const footerItens: FooterItensType = {
   id: 1,
-  imageSrc: 'src/assets/logo.png',
+  imageSrc: 'public/assets/logo.png',
   footerItemName: '',
   description: '',
   footerItensX: {

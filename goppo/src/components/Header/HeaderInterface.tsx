@@ -2,7 +2,7 @@ import {HeaderItensType} from '../Header/Header';
 
 export const headerItens: HeaderItensType = {
   id: 1,
-  imageSrc: 'src/assets/logo.png',
+  imageSrc: 'public/assets/logo.png',
   headerItensX: {
     headerItens: [
       {
@@ -51,7 +51,7 @@ export const headerItens: HeaderItensType = {
         headerItemName: 'Contato',
       },
     ],
-    imageSrc: 'src/assets/logo.png',
+    imageSrc: 'public/assets/logo.png',
   },
   headerItemName: 'header',
 };

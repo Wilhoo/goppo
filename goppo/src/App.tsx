@@ -26,7 +26,7 @@ const cardDisplay: CardDisplayProps = {
   macchineCards: [
     {
       id: 1,
-      imageSrc: `src/assets/mesa-de-passadoria.jpg`,
+      imageSrc: `public/assets/mesa-de-passadoria.jpg`,
       macchineName: 'Mesa Vaporizadora',
       description: 'Utilizada na vaporização de diversos tipos de tecidos',
       buttonText: 'Veja mais',
@@ -34,7 +34,7 @@ const cardDisplay: CardDisplayProps = {
 
     {
       id: 2,
-      imageSrc: `src/assets/mesa-de-passadoria.jpg`,
+      imageSrc: `public/assets/mesa-de-passadoria.jpg`,
       macchineName: 'Mesa Vaporizadora',
       description:
         'Utilizada na vaporização de diversos tipos de tecidos Utilizada na vaporização de diversos tipos de tecidos Utilizada na vaporização de diversos tipos de tecidos',
@@ -56,7 +56,7 @@ const cardDisplay2: CardDisplayProps = {
   macchineCards: [
     {
       id: 1,
-      imageSrc: `src/assets/mesa-de-passadoria.jpg`,
+      imageSrc: `public/assets/mesa-de-passadoria.jpg`,
       macchineName: 'Mesa Vaporizadora',
       description: 'Utilizada na vaporização de diversos tipos de tecidos',
       buttonText: 'Veja mais',
@@ -64,7 +64,7 @@ const cardDisplay2: CardDisplayProps = {
 
     {
       id: 2,
-      imageSrc: `src/assets/mesa-de-passadoria.jpg`,
+      imageSrc: `public/assets/mesa-de-passadoria.jpg`,
       macchineName: 'Mesa Vaporizadora',
       description:
         'Utilizada na vaporização de diversos tipos de tecidos Utilizada na vaporização de diversos tipos de tecidos Utilizada na vaporização de diversos tipos de tecidos',
