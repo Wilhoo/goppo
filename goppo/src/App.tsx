@@ -14,8 +14,8 @@ export interface TitleProps {
 }
 
 const cardDisplay: CardDisplayProps = {
-  color: 'color-blue',
   leftSide: true,
+  color: 'color-blue',
   description:
     'Esses equipamentos são a escolha ideal para quem busca qualidade e durabilidade.',
   title: [

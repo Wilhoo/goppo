@@ -4,6 +4,15 @@
   padding: 6rem 4.25rem;
   gap: 1rem;
 }
+
+.cardList.leftSide {
+  animation: slide-in-right-to-left 1s ease-in-out;
+}
+
+.cardList.rightSide {
+  animation: slide-in-left-to-right 1s ease-in-out;
+}
+
 .color-blue {
   background: var(--blue-100);
 }
@@ -36,6 +45,10 @@
   order: 99;
 }
 
+.leftSide .macchinesDescription {
+  order: 0;
+}
+
 .macchinesDescription h2 {
   font-size: 3rem;
   line-height: 3.125rem;
@@ -58,5 +71,23 @@
 
   .macchinesDescription p {
     margin-bottom: 1rem;
+  }
+}
+
+@keyframes slide-in-right-to-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-left-to-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }

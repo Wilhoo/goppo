@@ -9,6 +9,10 @@
   background-color: var(--blue-400);
 }
 
+.containerHeader > div {
+  display: flex;
+}
+
 .itensHeader {
   height: 100%;
   display: flex;
@@ -32,7 +36,6 @@
   outline: none !important;
 }
 
-
 .itensHeader button:hover {
   color: var(--gray-200);
 }
@@ -51,7 +54,8 @@
   font-size: 0.9rem;
 }
 
-.headerSuperior button:focus, .itensHeader button:focus {
+.headerSuperior button:focus,
+.itensHeader button:focus {
   outline: none;
   box-shadow: none;
   border-radius: none;
@@ -68,11 +72,10 @@
 }
 
 .logoStyle {
-  margin-top: 1.5vh;
   height: 65%;
 }
 
-@media(max-width: 1000px){
+@media (max-width: 1000px) {
   .logoStyle {
     margin-top: 1vh;
     height: 80%;
