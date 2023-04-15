@@ -3,6 +3,10 @@ import styles from './App.module.css';
 
 import './global.css';
 import {CardDisplay, CardDisplayProps} from './components/CardDisplay';
+import {Header} from './components/Header/Header';
+import {headerItens} from './components/Header/HeaderInterface'
+import {Footer} from './components/Footer/Footer';
+import {footerItens} from './components/Footer/FooterInterface'
 
 export interface TitleProps {
   bold?: boolean;
@@ -40,7 +44,9 @@ const cardDisplay: CardDisplayProps = {
 function App() {
   return (
     <div className={styles.wrapper}>
+      <Header headerItens={headerItens}/>
       <CardDisplay cardDisplay={cardDisplay} />
+      <Footer footerItens={footerItens}/>
     </div>
   );
 }
