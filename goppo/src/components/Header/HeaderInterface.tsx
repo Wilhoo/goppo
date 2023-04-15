@@ -48,5 +48,5 @@ export const headerItens: HeaderItensType = {
       id: 4,
       headerItemName: 'Contato',
     },
-  ]
+  ],
 };

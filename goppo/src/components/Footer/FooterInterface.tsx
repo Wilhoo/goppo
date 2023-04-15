@@ -1,5 +1,5 @@
 import {FooterProps, FooterItensType, Footer} from '../Footer/Footer';
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import {faBars} from '@fortawesome/free-solid-svg-icons';
 
 export const footerItens: FooterItensType = {
   imageSrc: 'src/assets/logo.png',
@@ -20,7 +20,7 @@ export const footerItens: FooterItensType = {
       id: 1,
       footerItemName: 'Entre em Contato:',
       description: '(54) 3229-5423',
-      imageSrc: {faBars}
+      imageSrc: {faBars},
     },
-  ]
+  ],
 };

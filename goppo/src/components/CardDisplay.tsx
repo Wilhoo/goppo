@@ -6,6 +6,8 @@ export interface CardDisplayProps {
   macchineCards: MacchineCardType[];
   title: TitleProps[];
   description: string;
+  color: 'color-dark-blue' | 'color-blue';
+  leftSide: boolean;
 }
 
 interface CardDisplayType {
@@ -14,7 +16,11 @@ interface CardDisplayType {
 
 export function CardDisplay({cardDisplay}: CardDisplayType) {
   return (
-    <div className={styles.cardList}>
+    <div
+      className={`${styles.cardList} ${styles[cardDisplay.color]} ${
+        cardDisplay.leftSide ? styles.leftSide : styles.rightSide
+      }`}
+    >
       <div className={styles.macchinesDescription}>
         <h2>
           {cardDisplay.title.map((title: TitleProps) => {
