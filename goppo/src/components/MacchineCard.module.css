@@ -12,10 +12,10 @@
   transition: 0.1s;
 }
 
-.macchineCard img {
+/* .macchineCard img {
   height: 10.25rem;
   width: auto;
-}
+} */
 
 .macchineInfo {
   display: flex;

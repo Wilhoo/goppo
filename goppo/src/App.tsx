@@ -10,6 +10,38 @@ export interface TitleProps {
 }
 
 const cardDisplay: CardDisplayProps = {
+  color: 'color-blue',
+  leftSide: true,
+  description:
+    'Esses equipamentos são a escolha ideal para quem busca qualidade e durabilidade.',
+  title: [
+    {content: 'Confira algumas das ', bold: false},
+    {content: 'máquinas em destaque ', bold: true},
+    {content: 'para malharia', bold: false},
+  ],
+  macchineCards: [
+    {
+      id: 1,
+      imageSrc: `src/assets/mesa-de-passadoria.jpg`,
+      macchineName: 'Mesa Vaporizadora',
+      description: 'Utilizada na vaporização de diversos tipos de tecidos',
+      buttonText: 'Veja mais',
+    },
+
+    {
+      id: 2,
+      imageSrc: `src/assets/mesa-de-passadoria.jpg`,
+      macchineName: 'Mesa Vaporizadora',
+      description:
+        'Utilizada na vaporização de diversos tipos de tecidos Utilizada na vaporização de diversos tipos de tecidos Utilizada na vaporização de diversos tipos de tecidos',
+      buttonText: 'Veja mais',
+    },
+  ],
+};
+
+const cardDisplay2: CardDisplayProps = {
+  leftSide: false,
+  color: 'color-dark-blue',
   description:
     'Esses equipamentos são a escolha ideal para quem busca qualidade e durabilidade.',
   title: [
@@ -41,6 +73,7 @@ function App() {
   return (
     <div className={styles.wrapper}>
       <CardDisplay cardDisplay={cardDisplay} />
+      <CardDisplay cardDisplay={cardDisplay2} />
     </div>
   );
 }
